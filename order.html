@@ -1,1 +1,33 @@
-<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Place Order - K&M</title><link rel='stylesheet' href='css/style.css'></head><body><header><nav><h1>K&M Avocados</h1><ul><li><a href='index.html'>Home</a></li><li><a href='about.html'>About</a></li><li><a href='fruits-veggies.html'>Fruits & Veggies</a></li><li><a href='order.html'>Order</a></li><li><a href='contact.html'>Contact</a></li></ul></nav></header><section class='section'><h3>Place Your Order</h3><form class='order-form' action='https://formspree.io/f/abcdwxyz' method='POST'><input type='hidden' name='_subject' value='New Export Order Request - K&M Avocados'><label>Full Name</label><input type='text' name='name' required><label>Email Address</label><input type='email' name='email' required><label>Country of Origin</label><select name='country' required><option value=''>Select Country</option><optgroup label='Middle East'><option>United Arab Emirates</option><option>Saudi Arabia</option><option>Qatar</option><option>Kuwait</option><option>Oman</option><option>Bahrain</option></optgroup><optgroup label='Europe'><option>Netherlands</option><option>Germany</option><option>France</option><option>United Kingdom</option><option>Belgium</option><option>Italy</option><option>Spain</option><option>Sweden</option></optgroup></select><label>Products Required</label><select name='products[]' multiple required><option>Hass Avocados</option><option>Fuerte Avocados</option><option>Apples</option><option>Mangoes</option><option>Kent Mangoes</option><option>Pineapples</option><option>Black Passion Fruits</option><option>Capsicums</option></select><label>Quantity (Tonnes)</label><input type='number' name='tonnes' min='1' required><label>Mode of Delivery</label><select name='delivery_mode' required><option>Ocean Freight</option><option>Air Freight</option></select><label>Proposed Port of Delivery</label><input type='text' name='port' required><label>Preferred Incoterms</label><select name='incoterms' required><option value=''>Select Incoterms</option><option>FOB – Free On Board (Mombasa)</option><option>CIF – Cost, Insurance & Freight</option></select><label>Additional Notes</label><textarea name='message' rows='4'></textarea><input type='text' name='_gotcha' style='display:none'><button type='submit'>Submit Order Request</button></form></section><footer>© 2026 K&M Avocado Exporters</footer><script src='whatsapp-tracking.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Place Order | K&M Exporters</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">K&M Exporters</div>
+</header>
+
+<section class="content">
+  <h1>Place an Order</h1>
+
+  <form action="mailto:info@kmexporters.com" method="post" enctype="text/plain">
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="text" placeholder="Country">
+    <input type="text" placeholder="Product">
+    <input type="number" placeholder="Tonnes">
+    <select>
+      <option>FOB</option>
+      <option>CIF</option>
+    </select>
+    <button type="submit">Submit Order</button>
+  </form>
+</section>
+
+</body>
+</html>
