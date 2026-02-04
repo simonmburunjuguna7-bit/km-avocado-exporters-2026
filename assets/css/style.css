@@ -32,15 +32,30 @@ body {
 .content {
   padding: 40px 20px;
 }
-
 .btn {
   display: inline-block;
-  background: white;
-  color: #1f7a1f;
-  padding: 12px 20px;
-  margin-top: 15px;
+  padding: 14px 28px;
+  font-weight: bold;
   text-decoration: none;
+  color: #fff;
+  border-radius: 6px;
+
+  background: linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url("../images/hero-avocado.jpg") center/cover no-repeat;
+
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+
 
 footer {
   text-align: center;
