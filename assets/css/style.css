@@ -47,3 +47,15 @@ footer {
   padding: 20px;
   background: #f4f4f4;
 }
+.hero-bg {
+  background: linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url("../images/hero-avocado.jpg") center/cover no-repeat;
+  color: #fff;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
