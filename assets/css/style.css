@@ -65,19 +65,6 @@ body {
 
 
 
-.btn:hover {
-  background: #0b7a3b; /* avocado green */
-  border-color: #0b7a3b;
-  transform: translateY(-2px);
-}
-
-.btn {
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-
-
 footer {
   text-align: center;
   padding: 20px;
