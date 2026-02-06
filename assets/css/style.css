@@ -38,17 +38,31 @@ body {
 .content {
   padding: 40px 20px;
 }
-.btn {
-  margin-top: 20px;
-  padding: 12px 28px;          /* reduced padding */
-  background: rgba(0, 0, 0, 0.55); /* transparent overlay */
-  color: #fff;
-  text-decoration: none;
+.glass-btn {
+  margin-top: 24px;
+  padding: 12px 30px;
+  color: #ffffff;
   font-weight: 600;
-  border-radius: 6px;
-  border: 1px solid rgba(255,255,255,0.6);
+  text-decoration: none;
+  border-radius: 10px;
+
+  /* Glass effect */
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+
   transition: all 0.3s ease;
 }
+
+.glass-btn:hover {
+  background: rgba(11, 122, 59, 0.65); /* avocado green */
+  border-color: rgba(11, 122, 59, 0.9);
+  transform: translateY(-2px);
+}
+
 
 
 .btn:hover {
@@ -80,4 +94,46 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.who-we-are {
+  background: #ffffff;
+  padding: 80px 10%;
+}
+
+.who-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.who-image img {
+  width: 280px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.who-text h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: #111;
+}
+
+.who-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 14px;
+}
+@media (max-width: 768px) {
+  .who-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .who-image img {
+    width: 220px;
+  }
 }
