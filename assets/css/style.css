@@ -172,3 +172,9 @@ footer {
   font-size: 2.2rem;
   margin-bottom: 20px;
 }
+@media (max-width: 900px) {
+  .vision {
+    grid-template-columns: 1fr;
+    padding: 60px 25px;
+  }
+}
