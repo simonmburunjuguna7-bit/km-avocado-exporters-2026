@@ -24,8 +24,13 @@ body {
   color: #ffffff;
   font-weight: 600;
   text-decoration: none;
-  margin-left: 20px;
 }
+.header nav {
+  display: flex;
+  gap: 32px;
+}
+
+
 .header::after {
   content: "";
   position: absolute;
