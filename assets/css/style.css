@@ -5,18 +5,49 @@ body {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+
   display: flex;
   justify-content: space-between;
-  padding: 15px;
-  background: #1f7a1f;
-  color: white;
+  align-items: center;
+
+  padding: 18px 40px;
+  background: transparent;
+  transition: all 0.3s ease;
 }
 
-.header a {
-  color: white;
-  margin-left: 15px;
+.header nav a,
+.header .logo {
+  color: #ffffff;
+  font-weight: 600;
   text-decoration: none;
+  margin-left: 20px;
 }
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  right: 40px;
+  height: 1px;
+  background: rgba(255,255,255,0.4);
+}
+.header.scrolled {
+  background: #ffffff;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.header.scrolled nav a,
+.header.scrolled .logo {
+  color: #000000;
+}
+.header.scrolled::after {
+  display: none;
+}
+
 
 .hero {
   background: url("../images/hero-avocado.jpg") center center / cover no-repeat;
@@ -38,29 +69,30 @@ body {
 .content {
   padding: 40px 20px;
 }
-.glass-btn {
-  margin-top: 24px;
-  padding: 12px 30px;
-  color: #ffffff;
-  font-weight: 600;
-  text-decoration: none;
-  border-radius: 10px;
 
-  /* Glass effect */
-  background: rgba(255, 255, 255, 0.18);
+.btn {
+  margin-top: 24px;
+  padding: 14px 34px;
+  font-weight: 800; /* thicker text */
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 
-  border: 1px solid rgba(255, 255, 255, 0.35);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 10px;
 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
   transition: all 0.3s ease;
 }
-
-.glass-btn:hover {
-  background: rgba(11, 122, 59, 0.65); /* avocado green */
-  border-color: rgba(11, 122, 59, 0.9);
-  transform: translateY(-2px);
+.btn:hover {
+  background: rgba(11, 122, 59, 0.85); /* avocado green */
+  border-color: #0b7a3b;
+  transform: translateY(-3px);
 }
 
 
@@ -123,4 +155,20 @@ footer {
   .who-image img {
     width: 220px;
   }
+}
+.vision {
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 80px 60px;
+  align-items: center;
+}
+.vision-image img {
+  width: 100%;
+  border-radius: 14px;
+}
+.vision-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
 }
