@@ -19,11 +19,17 @@ body {
 }
 
 .hero {
-  padding: 80px 20px;
-  background: #2e8b57;
-  color: white;
+  background: url("../images/hero-avocado.jpg") center center / cover no-repeat;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  color: #fff;
+  position: relative;
 }
+
 
 .hero.small {
   padding: 40px 20px;
@@ -33,27 +39,24 @@ body {
   padding: 40px 20px;
 }
 .btn {
-  display: inline-block;
-  padding: 14px 28px;
-  font-weight: bold;
-  text-decoration: none;
+  margin-top: 20px;
+  padding: 12px 28px;          /* reduced padding */
+  background: rgba(0, 0, 0, 0.55); /* transparent overlay */
   color: #fff;
+  text-decoration: none;
+  font-weight: 600;
   border-radius: 6px;
-
-  background: linear-gradient(
-      rgba(0,0,0,0.45),
-      rgba(0,0,0,0.45)
-    ),
-    url("../images/hero-avocado.jpg") center/cover no-repeat;
-
-  border: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid rgba(255,255,255,0.6);
+  transition: all 0.3s ease;
 }
+
 
 .btn:hover {
+  background: #0b7a3b; /* avocado green */
+  border-color: #0b7a3b;
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
+
 .btn {
   text-transform: uppercase;
   letter-spacing: 0.5px;
