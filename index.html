@@ -8,6 +8,17 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+  <script>
+  window.addEventListener("scroll", () => {
+    const header = document.querySelector(".header");
+    if (window.scrollY > 80) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+</script>
+
 
 <header class="header">
   <div class="logo">K&M Exporters</div>
@@ -27,29 +38,26 @@
   <a class="btn" href="order.html">Place an Order</a>
 </section>
 
-<section class="who-we-are">
-  <div class="who-container">
+<section class="vision">
+  <div class="vision-image">
+    <img src="assets/images/who-we-are.jpg" alt="K&M Exporters Kenya">
+  </div>
 
-    <div class="who-image">
-      <img src="assets/images/who-we-are.jpg" alt="K&M Exporters Kenya">
-    </div>
-
-    <div class="who-text">
-      <h2>Who We Are</h2>
-      <p>
-        K&M Exporters is a Kenya-based export company supplying premium-quality
-        avocados, fresh fruits, and halal-certified meat to buyers across the
-        Middle East and Europe.
-      </p>
-      <p>
-        We combine modern export logistics, strict food safety systems, and
-        reliable cold-chain facilitation to ensure consistent quality from
-        farm and abattoir to destination.
-      </p>
-    </div>
-
+  <div class="vision-text">
+    <h2>Who We Are</h2>
+    <p>
+      K&M Exporters is a Kenya-based export company supplying premium-quality
+      avocados, fresh fruits, and halal-certified meat to buyers across the
+      Middle East and Europe.
+    </p>
+    <p>
+      We combine global trade expertise with strict hygiene standards,
+      food safety management systems, and cold-chain facilitated logistics
+      to ensure consistent quality from farm and abattoir to destination.
+    </p>
   </div>
 </section>
+
 
 
   <h3>Why Choose Us</h3>
