@@ -20,7 +20,7 @@ body {
 }
 .header nav {
   display: flex;
-  gap: 32px;
+  gap: 10px;
   margin-right: 10px;
 }
 
