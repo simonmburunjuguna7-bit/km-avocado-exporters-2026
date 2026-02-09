@@ -14,14 +14,14 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  padding: 18px 40px;
+  padding: 18px 20px;
   background: transparent;
   transition: all 0.3s ease;
 }
 .header nav {
   display: flex;
-  gap: 32px;
-  margin-right: 40px;
+  gap: 24px;
+  margin-right: 20px;
 }
 
 .header nav a,
