@@ -31,7 +31,7 @@ body {
   .header nav {
     margin-right: 12px;
     gap: 16px;
-    font-size: 0.95rem;        /* slightly smaller text helps too */
+    font-size: 0.95rem;       
   }
 }
 
@@ -266,3 +266,21 @@ footer {
 
 .prev { left: 15px; }
 .next { right: 15px; }
+
+.header {
+  justify-content: flex-start;
+  gap: 25px;                     /* ← tweak 20–35px until perfect */
+  padding: 18px 40px;            /* keep original outer padding */
+}
+
+.header nav {
+  margin-right: 0;
+}
+
+@media (max-width: 992px) {
+  .header {
+    gap: 24px;               
+    
+    padding: 16px 20px;
+  }
+}
