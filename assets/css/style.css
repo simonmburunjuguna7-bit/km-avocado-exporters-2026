@@ -11,7 +11,8 @@ body {
   z-index: 999;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 32px;
   align-items: center;
   
 
@@ -19,14 +20,10 @@ body {
   background: transparent;
   transition: all 0.3s ease;
 }
-.header .logo {
-  color: #ffffff;
-  font-weight: 600;
-  text-decoration: none;
-}
 .header nav {
   display: flex;
   gap: 28px;
+  margin-right: 0px;
 }
 .header nav a,
 .header .logo {
@@ -271,5 +268,3 @@ footer {
 .prev { left: 15px; }
 .next { right: 15px; }
 }
-
-
