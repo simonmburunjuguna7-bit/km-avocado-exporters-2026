@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: flex-start;       /* pins logo to left */
   align-items: center;
-  gap: 32px;                         /* ← MAIN CHANGE: controls space between logo and nav (was large implicit gap) */
+  gap: 80px;                         /* ← MAIN CHANGE: controls space between logo and nav (was large implicit gap) */
 
   padding: 18px 40px;                /* keep original outer padding */
   background: transparent;
