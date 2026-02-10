@@ -11,8 +11,7 @@ body {
   z-index: 999;
 
   display: flex;
-  justify-content: flex-end;
-  gap: 32px;
+  justify-content: space-between;
   align-items: center;
   
 
@@ -23,7 +22,6 @@ body {
 .header nav {
   display: flex;
   gap: 28px;
-  margin-right: 0px;
 }
 .header nav a,
 .header .logo {
