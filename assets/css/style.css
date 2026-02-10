@@ -11,9 +11,10 @@ body {
   z-index: 999;
 
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
+  gap: 32px;
   align-items: center;
-  gap: 96px;
+  
 
   padding: 18px 40px;
   background: transparent;
