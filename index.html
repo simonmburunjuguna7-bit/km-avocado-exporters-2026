@@ -44,7 +44,7 @@
   <a class="btn" href="order.html">Place an Order</a>
 </section>
 
-<section class="vision">
+<section id="who" class="vision">
   <div class="vision-image">
     <img src="assets/images/who-we-are.jpg" alt="K&M Exporters Kenya">
   </div>
@@ -63,7 +63,7 @@
     </p>
   </div>
 </section>
-<section class="why-slider">
+<section id="why" class="vision">
   <h2>Why Choose Us</h2>
 
   <div class="slider">
@@ -114,10 +114,6 @@
   </div>
 </section>
 
-
-
-
-
 <footer>
   <p>© 2026 K&M Exporters – Kenya</p>
 </footer>
@@ -147,5 +143,29 @@
   });
 </script>
 
+  <script>
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".header nav a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120;
+      if (pageYOffset >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+  
 </body>
 </html>
