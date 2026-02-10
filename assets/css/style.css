@@ -28,8 +28,6 @@ body {
   max-width: 60%;                   
   justify-content: flex-end;        
   margin-left: auto; 
-  display: flex;
-  gap: 28px;
 }
 
 .header::after {
