@@ -317,3 +317,15 @@ footer {
   background: #1f7a3f;
   color: #fff;
 }
+@media (max-width: 768px) {
+  .product-preview {
+    flex-direction: column;
+    padding: 70px 6%;
+    text-align: center;
+  }
+
+  .preview-text h2 {
+    font-size: 28px;
+  }
+}
+
