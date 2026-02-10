@@ -317,7 +317,7 @@ footer {
   flex: 1;
   overflow: hidden;
   border-radius: 16px;
-  height: 360px;
+  height: 420px;
 }
 
 .preview-slides {
@@ -356,6 +356,8 @@ footer {
     padding: 70px 6%;
     text-align: center;
   }
+  .preview-slider {
+    height: 320px;
 
   .preview-text h2 {
     font-size: 28px;
