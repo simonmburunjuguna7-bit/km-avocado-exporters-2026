@@ -23,6 +23,17 @@ body {
   margin-right: 16px;
   gap: 28px;
 }
+@media (max-width: 900px) {
+  .header {
+    padding: 16px 16px;
+  }
+  
+  .header nav {
+    margin-right: 12px;
+    gap: 16px;
+    font-size: 0.95rem;        /* slightly smaller text helps too */
+  }
+}
 
 .header nav a,
 .header .logo {
