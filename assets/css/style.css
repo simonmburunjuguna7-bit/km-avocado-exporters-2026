@@ -268,3 +268,37 @@ footer {
 .prev { left: 15px; }
 .next { right: 15px; }
 }
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+}
+
+
+@media (max-width: 900px) {
+  .hamburger {
+    display: block;
+  }
+
+  .header nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #ffffff;
+    margin-top: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .header nav a {
+    padding: 14px 20px;
+    color: #000;
+    border-bottom: 1px solid #eee;
+  }
+
+  .header nav.show {
+    display: flex;
+  }
+}
