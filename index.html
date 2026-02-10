@@ -120,5 +120,18 @@
 <footer>
   <p>© 2026 K&M Exporters – Kenya</p>
 </footer>
+
+  <script>
+  const previewSlides = document.querySelector(".preview-slides");
+  const previewCount = document.querySelectorAll(".preview-slide").length;
+  let previewIndex = 0;
+
+  setInterval(() => {
+    previewIndex = (previewIndex + 1) % previewCount;
+    previewSlides.style.transform =
+      `translateX(-${previewIndex * 100}%)`;
+  }, 5000);
+</script>
+
 </body>
 </html>
