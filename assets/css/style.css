@@ -1,15 +1,20 @@
- {
+body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: #222;
-}.header {
+}
+
+.header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 999;  display: flex;
-  justify-content: flex-start;
-  gap:180px;
-  align-items: center;  padding: 18px 40px;
+  z-index: 999;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 40px;
   background: transparent;
   transition: all 0.3s ease;
 }
@@ -21,17 +26,24 @@
 @media (max-width: 900px) {
   .header {
     padding: 16px 16px;
-  }  .header nav {
+  }
+  
+  .header nav {
     margin-right: 12px;
     gap: 16px;
     font-size: 0.95rem;       
   }
-}.header nav a,
+}
+
+.header nav a,
 .header .logo {
   color: #ffffff;
   font-weight: 600;
   text-decoration: none;
-}.header::after {
+}
+
+
+.header::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -43,13 +55,18 @@
 .header.scrolled {
   background: #ffffff;
   box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-}.header.scrolled nav a,
+}
+
+.header.scrolled nav a,
 .header.scrolled .logo {
   color: #000000;
 }
 .header.scrolled::after {
   display: none;
-}.hero {
+}
+
+
+.hero {
   background: url("../images/hero-avocado.jpg") center center / cover no-repeat;
   min-height: 70vh;
   display: flex;
@@ -59,28 +76,45 @@
   text-align: center;
   color: #fff;
   position: relative;
-}.hero.small {
+}
+
+
+.hero.small {
   padding: 40px 20px;
-}.content {
+}
+
+.content {
   padding: 40px 20px;
-}.btn {
+}
+
+.btn {
   margin-top: 24px;
   padding: 14px 34px;
   font-weight: 800; /* thicker text */
   letter-spacing: 0.5px;
   color: #ffffff;
   text-transform: uppercase;
-  text-decoration: none;  background: rgba(255, 255, 255, 0.15);
+  text-decoration: none;
+
+  background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);  border: 1px solid rgba(255, 255, 255, 0.45);
-  border-radius: 10px;  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 10px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
   transition: all 0.3s ease;
 }
 .btn:hover {
   background: rgba(11, 122, 59, 0.85); /* avocado green */
   border-color: #0b7a3b;
   transform: translateY(-3px);
-}footer {
+}
+
+
+
+footer {
   text-align: center;
   padding: 20px;
   background: #f4f4f4;
@@ -100,22 +134,30 @@
 .who-we-are {
   background: #ffffff;
   padding: 80px 10%;
-}.who-container {
+}
+
+.who-container {
   display: flex;
   align-items: center;
   gap: 60px;
   max-width: 1200px;
   margin: auto;
-}.who-image img {
+}
+
+.who-image img {
   width: 280px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-}.who-text h2 {
+}
+
+.who-text h2 {
   font-size: 32px;
   margin-bottom: 16px;
   color: #111;
-}.who-text p {
+}
+
+.who-text p {
   font-size: 16px;
   line-height: 1.7;
   color: #444;
@@ -125,7 +167,9 @@
   .who-container {
     flex-direction: column;
     text-align: center;
-  }  .who-image img {
+  }
+
+  .who-image img {
     width: 220px;
   }
 }
@@ -155,41 +199,59 @@
   padding: 90px 40px;
   background: #f7f7f7;
   text-align: center;
-}.why-slider h2 {
+}
+
+.why-slider h2 {
   font-size: 2.2rem;
   margin-bottom: 40px;
-}.slider {
+}
+
+.slider {
   position: relative;
   overflow: hidden;
   max-width: 1100px;
   margin: auto;
   border-radius: 18px;
-}.slides {
+}
+
+.slides {
   display: flex;
   transition: transform 0.5s ease;
-}.slide {
+}
+
+.slide {
   min-width: 100%;
   height: 420px;
   background-size: cover;
   background-position: center;
   position: relative;
-}.slide::before {
+}
+
+.slide::before {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
-}.slide-text {
+}
+
+.slide-text {
   position: absolute;
   bottom: 40px;
   left: 40px;
   color: #fff;
   max-width: 500px;
-}.slide-text h3 {
+}
+
+.slide-text h3 {
   font-size: 1.8rem;
   margin-bottom: 10px;
-}.slide-text p {
+}
+
+.slide-text p {
   line-height: 1.6;
-}/* Navigation arrows */
+}
+
+/* Navigation arrows */
 .nav {
   position: absolute;
   top: 50%;
@@ -200,6 +262,26 @@
   padding: 6px 14px;
   cursor: pointer;
   border-radius: 50%;
-}.prev { left: 15px; }
+}
+
+.prev { left: 15px; }
 .next { right: 15px; }
+
+.header {
+  justify-content: flex-start;
+  gap: 25px;                     /* ← tweak 20–35px until perfect */
+  padding: 18px 40px;            /* keep original outer padding */
+}
+
+.header nav {
+  margin-right: 0;
+}
+
+@media (max-width: 992px) {
+  .header {
+    gap: 24px;               
+    
+    padding: 16px 20px;
+  }
+}
 
