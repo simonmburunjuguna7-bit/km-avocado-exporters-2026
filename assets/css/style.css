@@ -3,7 +3,6 @@ body {
   font-family: Arial, sans-serif;
   color: #222;
 }
-
 .header {
   position: fixed;
   top: 0;
@@ -13,24 +12,19 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 
-  padding: 18px 40px;
+  padding: 18px 60px 18px 40px;     /* more right padding = "Contact" stays farther from edge */
   background: transparent;
   transition: all 0.3s ease;
 }
-.header .logo {
-  color: #ffffff;
-  font-weight: 600;
-  text-decoration: none;
-}
+
 .header nav {
-  max-width: 60%;                   
-  justify-content: flex-end;        
-  margin-left: auto;
   display: flex;
-  gap: 28px;
+  gap: 24px;                        /* balanced spacing between links */
+  max-width: 60%;                   /* ← prevents overflow */
+  justify-content: flex-end;        /* aligns links to right inside nav */
 }
+
 
 .header::after {
   content: "";
