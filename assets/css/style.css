@@ -11,8 +11,9 @@ body {
   z-index: 999;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  gap: 96px;
 
   padding: 18px 40px;
   background: transparent;
@@ -20,28 +21,15 @@ body {
 }
 .header nav {
   display: flex;
-  margin-right: 16px;
   gap: 28px;
+  margin-right: 0px;
 }
-@media (max-width: 900px) {
-  .header {
-    padding: 16px 16px;
-  }
-  
-  .header nav {
-    margin-right: 12px;
-    gap: 16px;
-    font-size: 0.95rem;       
-  }
-}
-
 .header nav a,
 .header .logo {
   color: #ffffff;
   font-weight: 600;
   text-decoration: none;
 }
-
 
 .header::after {
   content: "";
@@ -63,6 +51,18 @@ body {
 }
 .header.scrolled::after {
   display: none;
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding: 16px 16px;
+  }
+  
+  .header nav {
+    margin-right: 12px;
+    gap: 16px;
+    font-size: 0.95rem;       
+  }
 }
 
 
