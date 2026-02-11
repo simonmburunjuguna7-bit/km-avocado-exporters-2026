@@ -271,70 +271,58 @@ footer {
 /* ===============================
    Avocado Product Preview
 ================================ */
-
+/* AVOCADO PREVIEW SECTION */
 .product-preview {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
   padding: 100px 10%;
+  text-align: center;
   background: #f9f9f9;
 }
 
-.preview-text {
-  flex: 1;
-}
-
-.preview-text h2 {
+.preview-title {
   font-size: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  color: #111;
 }
 
-.preview-points {
+.preview-bullets {
   list-style: none;
   padding: 0;
-  margin: 24px 0 30px;
+  margin: 0 0 30px 0;
 }
 
-.preview-points li {
-  font-size: 17px;
+.preview-bullets li {
   margin-bottom: 12px;
-  padding-left: 22px;
-  position: relative;
-  color: #444;
+  font-size: 18px;
+  color: #555;
 }
 
-.preview-points li::before {
-  content: "✓";
-  position: absolute;
-  left: 0;
-  color: #0b7a3b;
-  font-weight: bold;
+.preview-btn {
+  display: inline-block;
+  margin-bottom: 40px;
 }
 
-/* Slider */
 .preview-slider {
-  flex: 1;
-  max-width: 1100px;
   width: 100%;
+  max-width: 1000px;
   height: 420px;
+  margin: 0 auto;
   overflow: hidden;
-  border-radius: 18px;
-  margin-left: auto;
+  border-radius: 10px;
 }
 
 .preview-slides {
   display: flex;
-  height: 100%;
-  transition: transform 0.6s ease;
+  transition: transform 0.8s ease;
 }
 
 .preview-slide {
   min-width: 100%;
-  height: 100%;
+  height: 420px;
   background-size: cover;
   background-position: center;
 }
+
+
 
 /* Button */
 .btn-outline {
