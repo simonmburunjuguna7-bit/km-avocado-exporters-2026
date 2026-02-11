@@ -317,6 +317,54 @@ footer {
   background-size: cover;
   background-position: center;
 }
+/* Center Avocado Preview Title, Text & Button */
+.product-preview {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;    /* CENTER horizontally */
+  text-align: center;     /* CENTER text */
+  padding: 100px 10%;
+  background: #f9f9f9;
+}
+
+.preview-title {
+  font-size: 36px;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.preview-description {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.preview-btn {
+  margin-bottom: 40px;
+}
+
+/* Slider container (already centered by parent) */
+.preview-slider {
+  width: 100%;
+  max-width: 1100px; /* Same as Why Choose Us slider */
+  height: 420px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 auto; /* Ensures true center */
+}
+
+/* Slider slides */
+.preview-slides {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.preview-slide {
+  min-width: 100%;
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+}
 
 
 
