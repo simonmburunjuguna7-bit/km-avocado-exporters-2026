@@ -274,38 +274,34 @@ footer {
 /* AVOCADO PREVIEW SECTION */
 .product-preview {
   padding: 100px 10%;
-  text-align: center;
   background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* This forces true centering */
 }
 
 .preview-title {
   font-size: 36px;
-  margin-bottom: 30px;
-  color: #111;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
-.preview-bullets {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 30px 0;
-}
-
-.preview-bullets li {
-  margin-bottom: 12px;
+.preview-description {
   font-size: 18px;
+  margin-bottom: 25px;
   color: #555;
+  text-align: center;
 }
 
 .preview-btn {
-  display: inline-block;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
+/* SLIDER */
 .preview-slider {
   width: 100%;
   max-width: 1000px;
   height: 420px;
-  margin: 0 auto;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -321,6 +317,7 @@ footer {
   background-size: cover;
   background-position: center;
 }
+
 
 
 
