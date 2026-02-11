@@ -331,7 +331,7 @@ footer {
 
 .preview-slide {
   min-width: 100%;
-  height: 420%;
+  height: 100%;
   background-size: cover;
   background-position: center;
 }
@@ -362,7 +362,7 @@ footer {
   .preview-slider {
     max-width: 100%;
     height: 320px;
-
+  }
   .preview-text h2 {
     font-size: 28px;
   }
